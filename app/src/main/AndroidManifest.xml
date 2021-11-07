@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arafa.mohamed.studentteachersidraapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_sedra_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_sedra_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.StudentTeacherSidraApp">
+        <activity android:name=".activities.RatingSubscriptionDetailsActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.RatingSalaryActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.TeacherDetailsActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.StudentDetailsActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
