@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,11 +10,6 @@
     android:layout_marginTop="10dp"
     tools:context=".fragments.SubscriptionDetailsFragment">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,6 +50,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -101,6 +97,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -147,6 +145,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -194,6 +194,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -240,6 +241,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -286,6 +289,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -376,6 +381,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -421,6 +428,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -467,6 +476,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -512,6 +523,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -558,6 +571,8 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_gray"
                         android:inputType="text"
+                        android:enabled="false"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -576,20 +591,4 @@
 
         </LinearLayout>
 
-    </ScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/button_add_subscription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/general_app"
-        app:tint="@color/white"
-        app:borderWidth="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="15dp"
-        android:src="@drawable/ic_baseline_add_24"
-        android:contentDescription="@string/add_status" />
-
-</RelativeLayout>
+</ScrollView>
