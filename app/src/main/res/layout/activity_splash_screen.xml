@@ -10,12 +10,11 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image_splash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/dar_sidra_splash"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
 
         />
 
@@ -23,8 +22,7 @@
         android:id="@+id/text_footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_below="@id/image_splash"
         android:fontFamily="@font/cairo_extralight"
         android:gravity="center"
         android:text="@string/text_logo_splash"
