@@ -7,7 +7,6 @@
     android:layoutDirection="rtl"
     android:textDirection="rtl"
     android:background="@color/sub_color_app"
-    android:layout_marginTop="10dp"
     tools:context=".fragments.RatingDetailsFragment">
 
 
@@ -18,6 +17,7 @@
             android:orientation="vertical"
             android:focusableInTouchMode="true"
             android:focusable="true"
+            android:layout_marginTop="15dp"
             >
 
             <LinearLayout

@@ -26,13 +26,11 @@ import java.util.Objects;
 public class SalaryFragment extends Fragment {
     TextInputEditText etDaysIncrease, etDaysAbsence, etTotalSalary;
     AppCompatTextView tvCodeTeacher, tvNameTeacher;
-    FloatingActionButton btAddSalaryTeacher;
-    String daysIncrease, daysAbsence, totalSalary,codeTeacher,nameTeacher;
+    String codeTeacher,nameTeacher;
     DatabaseReference databaseReference;
     SalaryTeacherModel salaryTeacherModel;
 
     public SalaryFragment() {
-        // Required empty public constructor
     }
 
     public SalaryFragment(String codeTeacher, String nameTeacher) {
@@ -49,7 +47,6 @@ public class SalaryFragment extends Fragment {
         etDaysIncrease = viewSalary.findViewById(R.id.editText_number_days_increase);
         etDaysAbsence = viewSalary.findViewById(R.id.editText_number_days_of_absence);
         etTotalSalary = viewSalary.findViewById(R.id.editText_salary);
-        btAddSalaryTeacher = viewSalary.findViewById(R.id.button_add_salary);
         tvCodeTeacher = viewSalary.findViewById(R.id.text_code_teacher);
         tvNameTeacher = viewSalary.findViewById(R.id.text_name_teacher);
 
@@ -74,22 +71,6 @@ public class SalaryFragment extends Fragment {
             }
         });
 
-        btAddSalaryTeacher.setOnClickListener(v -> {
-
-            daysIncrease = Objects.requireNonNull(etDaysIncrease.getText()).toString();
-            daysAbsence = Objects.requireNonNull(etDaysAbsence.getText()).toString();
-            totalSalary = Objects.requireNonNull(etTotalSalary.getText()).toString();
-
-            salaryTeacherModel = new SalaryTeacherModel(daysIncrease, daysAbsence, totalSalary);
-            databaseReference.child("SalaryTeachers").child(codeTeacher).setValue(salaryTeacherModel).addOnCompleteListener(task -> {
-                if (task.isSuccessful()){
-                    Toast.makeText(getActivity(), "تم الاضافة بنجاح", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getActivity(), ""+ Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            });
-
-        });
         return viewSalary;
 
     }

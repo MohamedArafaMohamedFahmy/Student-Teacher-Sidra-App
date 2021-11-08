@@ -24,7 +24,6 @@ import java.util.Objects;
 
 public class RatingDetailsFragment extends Fragment {
     TextInputEditText etReview, etPreservation, etAudience, etAbsence, etTotal;
-    FloatingActionButton btAddRating;
     String codeStudent;
     DatabaseReference databaseReference;
     RatingModel ratingModel;
@@ -46,7 +45,6 @@ public class RatingDetailsFragment extends Fragment {
         etAudience = viewRating.findViewById(R.id.editText_audience);
         etAbsence = viewRating.findViewById(R.id.editText_absence);
         etTotal = viewRating.findViewById(R.id.editText_total);
-        btAddRating = viewRating.findViewById(R.id.button_add_rating);
 
         databaseReference.child("Rating").child(codeStudent).addValueEventListener(new ValueEventListener() {
             @Override
@@ -69,7 +67,6 @@ public class RatingDetailsFragment extends Fragment {
                 Toast.makeText(getActivity(), ""+error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-
 
         return viewRating;
     }

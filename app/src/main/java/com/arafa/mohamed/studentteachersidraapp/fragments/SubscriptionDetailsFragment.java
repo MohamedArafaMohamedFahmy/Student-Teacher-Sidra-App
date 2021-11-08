@@ -27,7 +27,6 @@ import java.util.Objects;
 public class SubscriptionDetailsFragment extends Fragment {
 
     TextInputEditText etJan, etFeb, etMar, etApr, etMay, etJun, etJul, etAug, etSep, etOct, etNov, etDec;
-    FloatingActionButton btAddSubscription;
     SubscriptionModel subscriptionModel;
     DatabaseReference databaseReference;
     String codeStudent, nameStudent, classStudent;
@@ -62,8 +61,6 @@ public class SubscriptionDetailsFragment extends Fragment {
         etOct = viewSubscription.findViewById(R.id.editText_oct);
         etNov = viewSubscription.findViewById(R.id.editText_nov);
         etDec = viewSubscription.findViewById(R.id.editText_dec);
-
-        btAddSubscription = viewSubscription.findViewById(R.id.button_add_subscription);
 
         databaseReference.child("Subscription").child(codeStudent).addValueEventListener(new ValueEventListener() {
             @Override

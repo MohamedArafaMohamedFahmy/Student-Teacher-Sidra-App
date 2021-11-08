@@ -29,7 +29,6 @@ public class RatingTeacherFragment extends Fragment {
     TextInputEditText etNotesAttendanceDeparture, etScoreAttendanceDeparture, etNotesClassroomCleanTidy,
             etScoreClassroomCleanTidy, etNotesValueGame, etScoreValueGame, etNotesDealingAtmosphere,
             etScoreDealingAtmosphere, etNotesTimeManagement, etScoreTimeManagement, etTotal;
-    FloatingActionButton btAddRatingTeacher;
 
     private String  notesAttendanceDeparture, scoreAttendanceDeparture, notesClassroomCleanTidy, scoreClassroomCleanTidy,
             notesValueGame, scoreValueGame, notesDealingAtmosphere, scoreDealingAtmosphere, notesTimeManagement,
@@ -64,7 +63,6 @@ public class RatingTeacherFragment extends Fragment {
         etNotesTimeManagement = viewRating.findViewById(R.id.editText_notes_time_management);
         etScoreTimeManagement = viewRating.findViewById(R.id.editText_score_time_management);
         etTotal = viewRating.findViewById(R.id.editText_score_total);
-        btAddRatingTeacher = viewRating.findViewById(R.id.button_add_rating_teacher);
 
         databaseReference.child("RatingTeachers").child(codeTeacher).addValueEventListener(new ValueEventListener() {
             @Override
@@ -91,34 +89,6 @@ public class RatingTeacherFragment extends Fragment {
                 Toast.makeText(getActivity(), ""+error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-
-        btAddRatingTeacher.setOnClickListener(v -> {
-            notesAttendanceDeparture = Objects.requireNonNull(etNotesAttendanceDeparture.getText()).toString();
-            scoreAttendanceDeparture = Objects.requireNonNull(etScoreAttendanceDeparture.getText()).toString();
-            notesClassroomCleanTidy = Objects.requireNonNull(etNotesClassroomCleanTidy.getText()).toString();
-            scoreClassroomCleanTidy = Objects.requireNonNull(etScoreClassroomCleanTidy.getText()).toString();
-            notesValueGame = Objects.requireNonNull(etNotesValueGame.getText()).toString();
-            scoreValueGame = Objects.requireNonNull(etScoreValueGame.getText()).toString();
-            notesDealingAtmosphere = Objects.requireNonNull(etNotesDealingAtmosphere.getText()).toString();
-            scoreDealingAtmosphere = Objects.requireNonNull(etScoreDealingAtmosphere.getText()).toString();
-            notesTimeManagement = Objects.requireNonNull(etNotesTimeManagement.getText()).toString();
-            scoreTimeManagement = Objects.requireNonNull(etScoreTimeManagement.getText()).toString();
-            total = Objects.requireNonNull(etTotal.getText()).toString();
-
-            ratingTeacherModel = new RatingTeacherModel(notesAttendanceDeparture, scoreAttendanceDeparture,
-                    notesClassroomCleanTidy, scoreClassroomCleanTidy, notesValueGame, scoreValueGame,
-                    notesDealingAtmosphere, scoreDealingAtmosphere, notesTimeManagement, scoreTimeManagement, total);
-
-            databaseReference.child("RatingTeachers").child(codeTeacher).setValue(ratingTeacherModel).addOnCompleteListener(task -> {
-                if (task.isSuccessful()){
-                    Toast.makeText(getActivity(), "تم الاضافة بنجاح", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getActivity(), ""+ Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
-                }
-
-            });
-        });
-
 
         return viewRating;
     }

@@ -55,6 +55,7 @@ public class TeacherDetailsActivity extends AppCompatActivity {
         btSalaryRating.setOnClickListener(v -> {
           Intent intentRatingSalary = new Intent(TeacherDetailsActivity.this, RatingSalaryActivity.class);
           intentRatingSalary.putExtra("codeTeacher",extra.getString("codeTeacher"));
+          intentRatingSalary.putExtra("nameTeacher",teacherModel.getNameTeacher());
           startActivity(intentRatingSalary);
         });
 
