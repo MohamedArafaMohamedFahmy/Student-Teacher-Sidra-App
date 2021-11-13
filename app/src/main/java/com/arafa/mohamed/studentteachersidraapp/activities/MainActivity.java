@@ -51,6 +51,5 @@ public class MainActivity extends AppCompatActivity {
                 etEnterCode.setText("من فضلك ادخل الكود");
             }
         });
-
     }
 }
