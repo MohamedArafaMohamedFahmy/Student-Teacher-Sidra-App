@@ -36,4 +36,10 @@
         <item name="buttonTint">@color/general_app</item>
     </style>
 
+    <style name="FilledBoxStartIconTint" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="startIconTint">#A1000000</item>
+        <item name="startIconDrawable">@drawable/ic_eye</item>
+
+    </style>
+
 </resources>

@@ -45,6 +45,31 @@
     <string name="preservation">الحفظ</string>
     <string name="audience">الحضور</string>
     <string name="absence">الغياب</string>
+    <string name="sign_in">تسجيل دخول</string>
+    <string name="email_address">البريد الالكترونى</string>
+    <string name="password">كلمة السر</string>
+    <string name="sign_up">إنشاء حساب</string>
+    <string name="do_not_have_an_account">ليس لديك حساب؟</string>
+    <string name="forgot_password">هل نسيت كلمة السر؟</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="already_have_an_account">هل لديك حساب ؟</string>
+    <string name="text_error1">الرجاء إدخال كلمة السر</string>
+    <string name="text_error2">كلمة المرور قصيرة جدًا ، يجب أن تتكون كلمة السر من 6 أحرف على الأقل </string>
+    <string name="text_error3">الرجاء إدخال تأكيد كلمة السر</string>
+    <string name="text_error4">تأكيد كلمة السر لا يتطابق مع كلمة السر</string>
+    <string name="first_text">أولاً ، دعنا نعيد تعيين كلمة المرور لحسابك</string>
+    <string name="second_text">رجاءا أدخل بريدك الإلكتروني</string>
+    <string name="message_forgot_password"> %1$s تحقق من بريدك الإلكتروني لإعادة تعيين كلمة السر الخاصة بك  </string>
+    <string name="reset_password">إعادة تعيين كلمة السر</string>
+    <string name="reset_password_appbar">تغيير كلمة السر</string>
+    <string name="main_home_appbar">الصفحة الرئيسية</string>
+    <string name="privacy_policy_appbar">سياسة الخصوصية</string>
+    <string name="message_to_user">يتم استلام هذا الكود من ادارة سدرة المنتهى  شكرا</string>
+    <string name="cancel">إلغاء</string>
+    <string name="accept">موافق</string>
+    <string name="notification">تنبيه</string>
+    <string name="do_you_want_to_log_out">هل تريد تسجيل الخروج؟</string>
 
     <string name="jan">يناير</string>
     <string name="feb">فبراير</string>
@@ -58,5 +83,12 @@
     <string name="oct">اكتوبر</string>
     <string name="nov">نوفمبر</string>
     <string name="dec">ديسمبر</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="text_privacy_policy">تدرك (سدرة المنتهى) حالة القلق التي تساور بعض الناس فيما يخص بياناتهم الشخصية والخوف من استغلالها بصورة غير لائقة؛ ولذلك فإننا نضع بين يدي عملائنا وزوارنا الخطوط العريضة والاشتراطات الأساسية حيال ذلك، منوهين إلى طريقة جمعها وحمايتها والغرض منها في النقاط التالية: لا يتم إجبار العميل على إرسال بياناته إلينا، بل إذا رغب هو في ذلك، فإنه يرسلها طواعية عبر النموذج المخصص، ويكون السبب وراء ذلك هو الاستفادة من عروضنا أو التعاقد على إحدى خدماتنا، وكذلك لتسهيل التواصل بيننا وبينه. المعلومات المخزنة لدينا عن العملاء تساعدنا في تطوير خدماتنا وتلافي الخلل فيها، كما نزود عملاءنا من خلالها بكل مستجداتنا، من تصميمات وعروض وغير ذلك. عادة ما تكون البيانات التي يزودنا بها العميل ذات أهمية له هو على وجه الخصوص، ومن تلك البيانات (الاسم والبريد الإلكتروني والهاتف وكود الطالب او المعلم / المعلمة).</string>
+    <string name="security_of_data">أمان بياناتك مسئوليتنا</string>
+    <string name="text_security_of_data">تتكفل (سدرة المنتهى) بحفظ بيانات العملاء الشخصية وعدم التصرف فيها بالبيع أو المشاركة مع الغير، إلا إذا رغب العميل في ذلك بموجب موافقة كتابية ذات موثوقية، ولا يسري ذلك على البيانات العامة التي تُستخدم في الإحصاء وغيره، مع مراعاة عدم المساس بالمعلومات الشخصية . تستخدم (سدرة المنتهى) تقنية متطورة لحفظ معلومات العملاء الشخصية وبأعلى درجات السرية، من خلال خوادم خاصة؛ تكفل حمايتها من الإتلاف أو العبث. قرارك بيدك يحق للعملاء في أي وقت مطالبتنا بأن نتوقف عن استخدام البيانات الخاصة بهم، إذا رغبوا في ذلك.</string>
+    <string name="item_log_out">تسجيل الخروج</string>
+    <string name="about">من نحن</string>
+
 
 </resources>

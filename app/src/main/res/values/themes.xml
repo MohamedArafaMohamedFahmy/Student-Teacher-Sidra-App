@@ -32,6 +32,12 @@
         <item name="mrl_rippleAlpha">0.8</item>
     </style>
 
+    <style name="FilledBoxStartIconTint" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="startIconTint">#A1000000</item>
+        <item name="startIconDrawable">@drawable/ic_eye</item>
+
+    </style>
+
     <style name="style_check_box">
         <item name="buttonTint">@color/general_app</item>
     </style>

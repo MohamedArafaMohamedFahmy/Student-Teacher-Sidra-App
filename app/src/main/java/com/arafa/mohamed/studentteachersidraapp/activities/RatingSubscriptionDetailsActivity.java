@@ -6,6 +6,8 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.view.View;
+
 import com.arafa.mohamed.studentteachersidraapp.R;
 import com.arafa.mohamed.studentteachersidraapp.adapter.TabsSubscriptionRatingAdapter;
 import com.google.android.material.tabs.TabLayout;
@@ -31,6 +33,7 @@ public class RatingSubscriptionDetailsActivity extends AppCompatActivity {
         tvToolbar = findViewById(R.id.text_toolbar);
 
         tvToolbar.setText(R.string.rating_subscription_appbar);
+        btBackArrow.setVisibility(View.VISIBLE);
         btBackArrow.setOnClickListener(v -> finish());
 
         tabsItems = findViewById(R.id.tabs_item);

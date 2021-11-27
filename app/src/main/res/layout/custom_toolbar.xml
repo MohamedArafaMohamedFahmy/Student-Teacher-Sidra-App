@@ -23,6 +23,7 @@
        android:layout_height="wrap_content"
        android:src="@drawable/ic_baseline_arrow_forward_24"
        android:background="@color/transparent"
+       android:visibility="gone"
        />
 
    </com.balysv.materialripple.MaterialRippleLayout>
@@ -45,7 +46,7 @@
        style="@style/RippleStyleGrey"
        android:layout_width="25dp"
        android:layout_height="25dp"
-       android:layout_toEndOf="@id/ripple_log_out"
+       android:layout_toEndOf="@id/ripple_pop_menu"
        android:layout_marginStart="20dp"
        >
 
@@ -60,23 +61,24 @@
        />
    </com.balysv.materialripple.MaterialRippleLayout>
 
+
    <com.balysv.materialripple.MaterialRippleLayout
-       android:id="@+id/ripple_log_out"
+       android:id="@+id/ripple_pop_menu"
        style="@style/RippleStyleGrey"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_alignParentStart="true"
        >
 
-   <androidx.appcompat.widget.AppCompatImageButton
-       android:id="@+id/button_log_out"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:src="@drawable/ic_logout"
-       android:background="@color/transparent"
-       android:visibility="gone"
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:id="@+id/button_pop_menu"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_baseline_more_vert_24"
+          android:background="@color/transparent"
+          android:visibility="gone"
 
-       />
+          />
    </com.balysv.materialripple.MaterialRippleLayout>
 
 </RelativeLayout>

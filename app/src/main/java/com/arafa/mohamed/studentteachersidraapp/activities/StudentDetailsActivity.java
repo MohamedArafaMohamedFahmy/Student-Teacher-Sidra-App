@@ -70,6 +70,7 @@ public class StudentDetailsActivity extends AppCompatActivity {
 
         tvToolbar.setText(R.string.student_details_appbar);
         btSubRating.setVisibility(View.VISIBLE);
+        btBackArrow.setVisibility(View.VISIBLE);
         btBackArrow.setOnClickListener(v -> finish());
 
         linearProgressBar.setVisibility(View.VISIBLE);

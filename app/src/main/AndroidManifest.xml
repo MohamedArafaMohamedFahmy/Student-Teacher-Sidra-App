@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_logo_sedra_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.StudentTeacherSidraApp">
-        <activity android:name=".activities.RatingSubscriptionDetailsActivity"
+        <activity android:name=".activities.AboutActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity android:name=".activities.PrivacyPolicyActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".activities.RatingSubscriptionDetailsActivity"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
             android:name=".activities.RatingSalaryActivity"

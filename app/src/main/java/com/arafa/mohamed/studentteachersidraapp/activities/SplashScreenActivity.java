@@ -35,7 +35,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         int splash_Screen = 2000;
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+            startActivity(new Intent(SplashScreenActivity.this, RegistrationActivity.class));
             finish();
         }, splash_Screen);
     }

@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.arafa.mohamed.studentteachersidraapp.R;
 import com.arafa.mohamed.studentteachersidraapp.adapter.TabsSalaryRatingAdapter;
@@ -32,6 +33,7 @@ public class RatingSalaryActivity extends AppCompatActivity {
         tvToolbar = findViewById(R.id.text_toolbar);
 
         tvToolbar.setText(R.string.rating_salary_appbar);
+        btBackArrow.setVisibility(View.VISIBLE);
         btBackArrow.setOnClickListener(v -> finish());
         extra = getIntent().getExtras();
 

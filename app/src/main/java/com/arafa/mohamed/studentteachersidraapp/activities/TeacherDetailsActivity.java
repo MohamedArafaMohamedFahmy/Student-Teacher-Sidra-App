@@ -50,6 +50,7 @@ public class TeacherDetailsActivity extends AppCompatActivity {
         extra = getIntent().getExtras();
 
         tvToolbar.setText(R.string.teacher_details_appbar);
+        btBackArrow.setVisibility(View.VISIBLE);
         btBackArrow.setOnClickListener(v -> finish());
         btSalaryRating.setVisibility(View.VISIBLE);
         btSalaryRating.setOnClickListener(v -> {
