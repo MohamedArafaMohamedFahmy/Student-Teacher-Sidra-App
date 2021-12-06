@@ -25,7 +25,7 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/image_logo"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:scaleType="centerCrop"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/dar_sidra_splash"
@@ -35,7 +35,16 @@
                 android:id="@+id/text_about"
                 android:layout_below="@id/image_logo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="@string/text_about"
+                android:textColor="@color/black_gray"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/amaranth"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginStart="6dp"
+                />
 
             <androidx.cardview.widget.CardView
                 android:layout_below="@id/text_about"
@@ -54,6 +63,7 @@
                     android:layout_height="wrap_content">
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_facebook"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/app_name"

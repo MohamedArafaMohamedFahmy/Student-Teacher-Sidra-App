@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import android.content.Context;
 import android.content.Intent;
@@ -28,7 +29,7 @@ import java.util.Objects;
 public class RegistrationActivity extends AppCompatActivity {
 
     AppCompatTextView btSignIn,textErrorPassword,textErrorConfirm;
-    AppCompatButton btSignUp;
+    AppCompatButton btSignUp, btView;
     AppCompatEditText etUserName,etEmailAddress,etPassword,etConfirmPassword;
     LinearLayout linearProgressBar;
     FirebaseAuth firebaseAuth;
@@ -46,6 +47,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
         btSignUp=findViewById(R.id.button_signUp);
         btSignIn=findViewById(R.id.text_sign_in);
+        btView = findViewById(R.id.button_login_visitor);
         etUserName=findViewById(R.id.editText_userName);
         etEmailAddress=findViewById(R.id.editText_email);
         etPassword=findViewById(R.id.editText_password);
@@ -61,6 +63,8 @@ public class RegistrationActivity extends AppCompatActivity {
         etConfirmPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
         checkPassword = true;
         checkConfirmPassword = true;
+
+        btView.setOnClickListener(v -> startActivity(new Intent(RegistrationActivity.this, ViewBranchesActivity.class)));
 
         textLayoutPassword.setStartIconOnClickListener(v -> {
             if(Objects.requireNonNull(AppCompatResources.getDrawable(RegistrationActivity.this, R.drawable.ic_eye)).isVisible() && checkPassword ){

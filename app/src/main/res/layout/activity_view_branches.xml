@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sub_color_app"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    tools:context=".activities.ViewBranchesActivity">
+
+    <include
+        android:id="@+id/toolbar_view_branches"
+        layout="@layout/custom_toolbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_branches"
+        android:layout_below="@id/toolbar_view_branches"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

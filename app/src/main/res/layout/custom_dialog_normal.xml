@@ -32,7 +32,7 @@
             android:layout_below="@id/text_notification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/do_you_want_to_log_out"
+            android:text="@string/message_confirm"
             android:layout_marginEnd="15dp"
             android:textColor="#000"
             android:fontFamily="@font/cairo_extralight"
@@ -50,47 +50,28 @@
             android:padding="5dp"
             >
 
-                <com.balysv.materialripple.MaterialRippleLayout
-                    style="@style/RippleStyleGrey"
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleGrey"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_yes"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    >
+                    android:textColor="#f00"
+                    android:background="@color/transparent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/accept"
+                    />
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/button_yes"
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:textColor="#f00"
-                        android:background="@color/transparent"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="@string/accept"
-                        />
+            </com.balysv.materialripple.MaterialRippleLayout>
 
-                </com.balysv.materialripple.MaterialRippleLayout>
 
-                <com.balysv.materialripple.MaterialRippleLayout
-                    style="@style/RippleStyleGrey"
-                    android:layout_width="50dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    >
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/button_no"
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:textColor="@color/general_app"
-                        android:background="@color/transparent"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="@string/cancel"
-                        />
-
-                </com.balysv.materialripple.MaterialRippleLayout>
 
         </LinearLayout>
 

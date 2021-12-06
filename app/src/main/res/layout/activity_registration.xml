@@ -17,6 +17,7 @@
         android:focusable="true"
         >
 
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_sign_up"
             android:layout_width="match_parent"
@@ -212,6 +213,7 @@
         </androidx.cardview.widget.CardView>
 
         <LinearLayout
+            android:id="@+id/linear_already_have_an_account"
             android:layout_below="@id/card_button_sign_up"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -252,6 +254,42 @@
 
 
         </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_button_login_visitor"
+            android:layout_below="@id/linear_already_have_an_account"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/transparent"
+            >
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/RippleStyleGrey"
+                android:layout_width="130dp"
+                android:layout_height="50dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_login_visitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/text_login_visitor"
+                    />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
 
         <LinearLayout
             android:id="@+id/linear_progress_bar"

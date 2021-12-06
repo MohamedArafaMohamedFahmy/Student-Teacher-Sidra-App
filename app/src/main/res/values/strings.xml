@@ -63,13 +63,21 @@
     <string name="message_forgot_password"> %1$s تحقق من بريدك الإلكتروني لإعادة تعيين كلمة السر الخاصة بك  </string>
     <string name="reset_password">إعادة تعيين كلمة السر</string>
     <string name="reset_password_appbar">تغيير كلمة السر</string>
+    <string name="reservation_page_appbar">صفحة الحجز</string>
     <string name="main_home_appbar">الصفحة الرئيسية</string>
     <string name="privacy_policy_appbar">سياسة الخصوصية</string>
+    <string name="about_appbar">من نحن</string>
+    <string name="view_classes_appbar">عرض الفصول</string>
+    <string name="view_branches_appbar">عرض الفروع</string>
     <string name="message_to_user">يتم استلام هذا الكود من ادارة سدرة المنتهى  شكرا</string>
     <string name="cancel">إلغاء</string>
     <string name="accept">موافق</string>
     <string name="notification">تنبيه</string>
     <string name="do_you_want_to_log_out">هل تريد تسجيل الخروج؟</string>
+
+    <string name="days">الايام :</string>
+    <string name="timing">التوقيت :</string>
+    <string name="name_class">اسم الفصل :</string>
 
     <string name="jan">يناير</string>
     <string name="feb">فبراير</string>
@@ -89,6 +97,12 @@
     <string name="text_security_of_data">تتكفل (سدرة المنتهى) بحفظ بيانات العملاء الشخصية وعدم التصرف فيها بالبيع أو المشاركة مع الغير، إلا إذا رغب العميل في ذلك بموجب موافقة كتابية ذات موثوقية، ولا يسري ذلك على البيانات العامة التي تُستخدم في الإحصاء وغيره، مع مراعاة عدم المساس بالمعلومات الشخصية . تستخدم (سدرة المنتهى) تقنية متطورة لحفظ معلومات العملاء الشخصية وبأعلى درجات السرية، من خلال خوادم خاصة؛ تكفل حمايتها من الإتلاف أو العبث. قرارك بيدك يحق للعملاء في أي وقت مطالبتنا بأن نتوقف عن استخدام البيانات الخاصة بهم، إذا رغبوا في ذلك.</string>
     <string name="item_log_out">تسجيل الخروج</string>
     <string name="about">من نحن</string>
+    <string name="text_about">دار سدرة المنتهي لتحفيظ القران وتعليم القراءه والكتابة مرخصه من الازهر الشريف بتصريح 81 لسنه 2012 . و تهدف إلى إحياءالتراث القديم بأسلوب حديث .
+        لها العديد من الانشطة التعليميه والترفهيه وتهتم بعلوم القران من (تفسير _تجويد) وإقامة المسابقات التشجيعية فى حفظ ( القران الكريم ـ الأحاديث النبويه ).  كما تحرص على تشجيع الطلاب و تقدير جهودهم بإقامة الحفلات والتكريمات و و تقديم شهادات التقدير المحفزه للطلاب و بذلك تكون أكثر من مجرد مكان.  و من سعيها لمواكبة الجيل الجديد .. نقدم هذا التطبيق لتحقيق تواصل أفضل مع أولياء الأمور و متابعة أفضل لمستوى أبنائنا الطلبة.</string>
+    <string name="name_person">اسم الاب او الام</string>
+    <string name="button_reservation">ارسال الحجز</string>
+    <string name="message_confirm">تم الحجز , سيتم التواصل معك من خلال الاداره , شكرا</string>
+    <string name="text_login_visitor">الدخول كزائر</string>
 
 
 </resources>
