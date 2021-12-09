@@ -78,6 +78,8 @@
     <string name="days">الايام :</string>
     <string name="timing">التوقيت :</string>
     <string name="name_class">اسم الفصل :</string>
+    <string name="text_class">الفصل :</string>
+    <string name="text_timing">التوقيت :</string>
 
     <string name="jan">يناير</string>
     <string name="feb">فبراير</string>
@@ -91,6 +93,7 @@
     <string name="oct">اكتوبر</string>
     <string name="nov">نوفمبر</string>
     <string name="dec">ديسمبر</string>
+
     <string name="privacy_policy">سياسة الخصوصية</string>
     <string name="text_privacy_policy">تدرك (سدرة المنتهى) حالة القلق التي تساور بعض الناس فيما يخص بياناتهم الشخصية والخوف من استغلالها بصورة غير لائقة؛ ولذلك فإننا نضع بين يدي عملائنا وزوارنا الخطوط العريضة والاشتراطات الأساسية حيال ذلك، منوهين إلى طريقة جمعها وحمايتها والغرض منها في النقاط التالية: لا يتم إجبار العميل على إرسال بياناته إلينا، بل إذا رغب هو في ذلك، فإنه يرسلها طواعية عبر النموذج المخصص، ويكون السبب وراء ذلك هو الاستفادة من عروضنا أو التعاقد على إحدى خدماتنا، وكذلك لتسهيل التواصل بيننا وبينه. المعلومات المخزنة لدينا عن العملاء تساعدنا في تطوير خدماتنا وتلافي الخلل فيها، كما نزود عملاءنا من خلالها بكل مستجداتنا، من تصميمات وعروض وغير ذلك. عادة ما تكون البيانات التي يزودنا بها العميل ذات أهمية له هو على وجه الخصوص، ومن تلك البيانات (الاسم والبريد الإلكتروني والهاتف وكود الطالب او المعلم / المعلمة).</string>
     <string name="security_of_data">أمان بياناتك مسئوليتنا</string>
@@ -103,6 +106,22 @@
     <string name="button_reservation">ارسال الحجز</string>
     <string name="message_confirm">تم الحجز , سيتم التواصل معك من خلال الاداره , شكرا</string>
     <string name="text_login_visitor">الدخول كزائر</string>
+
+
+    <string-array name="list_month">
+        <item> يناير</item>
+        <item> فبراير</item>
+        <item> مارس </item>
+        <item> ابريل</item>
+        <item> مايو </item>
+        <item> يونيو </item>
+        <item> يوليو </item>
+        <item> اغسطس </item>
+        <item> سبتمبر </item>
+        <item> اكتوبر </item>
+        <item> نوفمبر </item>
+        <item> ديسمبر </item>
+    </string-array>
 
 
 </resources>

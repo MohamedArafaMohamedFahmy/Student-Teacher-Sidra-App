@@ -9,6 +9,61 @@ public class SubscriptionModel {
     public SubscriptionModel() {
     }
 
+    public static ArrayList<MonthModel> getMonth(){
+
+        ArrayList <MonthModel> listMonth = new ArrayList<>();
+        MonthModel jan = new MonthModel();
+        jan.nameMonth = "يناير";
+        listMonth.add(jan);
+
+        MonthModel feb = new MonthModel();
+        feb.nameMonth = "فبراير";
+        listMonth.add(feb);
+
+        MonthModel mar = new MonthModel();
+        mar.nameMonth = "مارس";
+        listMonth.add(mar);
+
+        MonthModel apr = new MonthModel();
+        apr.nameMonth = "ابريل";
+        listMonth.add(apr);
+
+        MonthModel may = new MonthModel();
+        may.nameMonth = "مايو";
+        listMonth.add(may);
+
+        MonthModel jun = new MonthModel();
+        jun.nameMonth = "يونيو";
+        listMonth.add(jun);
+
+        MonthModel jul = new MonthModel();
+        jul.nameMonth = "يوليو";
+        listMonth.add(jul);
+
+        MonthModel aug = new MonthModel();
+        aug.nameMonth = "اغسطس";
+        listMonth.add(aug);
+
+        MonthModel sep = new MonthModel();
+        sep.nameMonth = "سبتمبر";
+        listMonth.add(sep);
+
+        MonthModel oct = new MonthModel();
+        oct.nameMonth = "اكتوبر";
+        listMonth.add(oct);
+
+        MonthModel nov = new MonthModel();
+        nov.nameMonth = "نوفمبر";
+        listMonth.add(nov);
+
+        MonthModel dec = new MonthModel();
+        dec.nameMonth = "ديسمبر";
+        listMonth.add(dec);
+
+
+        return listMonth;
+    }
+
 
 
     public String getJan() {

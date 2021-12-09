@@ -47,6 +47,7 @@ public class ClassesAdapter  extends RecyclerView.Adapter<ClassesAdapter.MyViewH
 
         if (downloadData.get(position).getStatus().equals("مغلق")){
             holder.imgStatus.setImageResource(R.drawable.close);
+            holder.tvStatus.setText("الحجز مغلق");
             holder.tvNameClass.setText(downloadData.get(position).getNameClass());
             holder.tvDays.setText(downloadData.get(position).getDays());
             holder.tvTiming.setText(downloadData.get(position).getTiming());
@@ -56,6 +57,7 @@ public class ClassesAdapter  extends RecyclerView.Adapter<ClassesAdapter.MyViewH
         }
         if (downloadData.get(position).getStatus().equals("مفتوح")){
             holder.imgStatus.setImageResource(R.drawable.open);
+            holder.tvStatus.setText("الحجز متاح");
             holder.tvNameClass.setText(downloadData.get(position).getNameClass());
             holder.tvDays.setText(downloadData.get(position).getDays());
             holder.tvTiming.setText(downloadData.get(position).getTiming());
@@ -74,7 +76,7 @@ public class ClassesAdapter  extends RecyclerView.Adapter<ClassesAdapter.MyViewH
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        AppCompatTextView tvNameClass, tvDays, tvTiming;
+        AppCompatTextView tvNameClass, tvDays, tvTiming,tvStatus;
         AppCompatImageView imgStatus;
 
         public MyViewHolder(@NonNull View itemView) {
@@ -83,6 +85,7 @@ public class ClassesAdapter  extends RecyclerView.Adapter<ClassesAdapter.MyViewH
             tvDays = itemView.findViewById(R.id.text_days);
             tvTiming = itemView.findViewById(R.id.text_timing);
             imgStatus = itemView.findViewById(R.id.image_status);
+            tvStatus = itemView.findViewById(R.id.text_status);
         }
     }
 
