@@ -4,7 +4,7 @@ public class RatingTeacherModel {
 
     private String  notesAttendanceDeparture, scoreAttendanceDeparture, notesClassroomCleanTidy, scoreClassroomCleanTidy,
             notesValueGame, scoreValueGame, notesDealingAtmosphere, scoreDealingAtmosphere, notesTimeManagement,
-            scoreTimeManagement, total;
+            scoreTimeManagement, total, achievements;
 
 
     public RatingTeacherModel() {
@@ -13,7 +13,7 @@ public class RatingTeacherModel {
     public RatingTeacherModel(String notesAttendanceDeparture, String scoreAttendanceDeparture,
                               String notesClassroomCleanTidy, String scoreClassroomCleanTidy, String notesValueGame,
                               String scoreValueGame, String notesDealingAtmosphere, String scoreDealingAtmosphere,
-                              String notesTimeManagement, String scoreTimeManagement, String total) {
+                              String notesTimeManagement, String scoreTimeManagement, String total, String achievements) {
         this.notesAttendanceDeparture = notesAttendanceDeparture;
         this.scoreAttendanceDeparture = scoreAttendanceDeparture;
         this.notesClassroomCleanTidy = notesClassroomCleanTidy;
@@ -25,6 +25,7 @@ public class RatingTeacherModel {
         this.notesTimeManagement = notesTimeManagement;
         this.scoreTimeManagement = scoreTimeManagement;
         this.total = total;
+        this.achievements = achievements;
     }
 
     public String getNotesAttendanceDeparture() {
@@ -113,5 +114,13 @@ public class RatingTeacherModel {
 
     public void setTotal(String total) {
         this.total = total;
+    }
+
+    public String getAchievements() {
+        return achievements;
+    }
+
+    public void setAchievements(String achievements) {
+        this.achievements = achievements;
     }
 }

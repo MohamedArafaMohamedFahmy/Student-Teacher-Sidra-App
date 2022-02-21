@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
         btSignIn.setOnClickListener(v -> {
             emailAddress= Objects.requireNonNull(etEmailAddress.getText()).toString();
             password= Objects.requireNonNull(etPassword.getText()).toString();
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
             if(!emailAddress.isEmpty() && !password.isEmpty() && password.length() >= 6 ){
                 getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
                         WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);

@@ -28,11 +28,9 @@ public class RatingTeacherFragment extends Fragment {
 
     TextInputEditText etNotesAttendanceDeparture, etScoreAttendanceDeparture, etNotesClassroomCleanTidy,
             etScoreClassroomCleanTidy, etNotesValueGame, etScoreValueGame, etNotesDealingAtmosphere,
-            etScoreDealingAtmosphere, etNotesTimeManagement, etScoreTimeManagement, etTotal;
+            etScoreDealingAtmosphere, etNotesTimeManagement, etScoreTimeManagement, etTotal, etAchievements;
 
-    private String  notesAttendanceDeparture, scoreAttendanceDeparture, notesClassroomCleanTidy, scoreClassroomCleanTidy,
-            notesValueGame, scoreValueGame, notesDealingAtmosphere, scoreDealingAtmosphere, notesTimeManagement,
-            scoreTimeManagement, total, codeTeacher;
+    private String   codeTeacher;
 
     DatabaseReference databaseReference;
     RatingTeacherModel ratingTeacherModel;
@@ -63,6 +61,7 @@ public class RatingTeacherFragment extends Fragment {
         etNotesTimeManagement = viewRating.findViewById(R.id.editText_notes_time_management);
         etScoreTimeManagement = viewRating.findViewById(R.id.editText_score_time_management);
         etTotal = viewRating.findViewById(R.id.editText_score_total);
+        etAchievements = viewRating.findViewById(R.id.editText_achievements);
 
         databaseReference.child("RatingTeachers").child(codeTeacher).addValueEventListener(new ValueEventListener() {
             @Override
@@ -80,8 +79,9 @@ public class RatingTeacherFragment extends Fragment {
                     etNotesTimeManagement.setText(ratingTeacherModel.getNotesTimeManagement());
                     etScoreTimeManagement.setText(ratingTeacherModel.getScoreTimeManagement());
                     etTotal.setText(ratingTeacherModel.getTotal());
-                }
+                    etAchievements.setText(ratingTeacherModel.getAchievements());
 
+                }
             }
 
             @Override

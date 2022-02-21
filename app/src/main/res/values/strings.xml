@@ -106,6 +106,7 @@
     <string name="button_reservation">ارسال الحجز</string>
     <string name="message_confirm">تم الحجز , سيتم التواصل معك من خلال الاداره , شكرا</string>
     <string name="text_login_visitor">الدخول كزائر</string>
+    <string name="achievements">الانجازات</string>
 
 
     <string-array name="list_month">
