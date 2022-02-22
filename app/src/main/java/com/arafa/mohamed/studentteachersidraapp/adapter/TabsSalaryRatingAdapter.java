@@ -30,7 +30,7 @@ public class TabsSalaryRatingAdapter extends FragmentStateAdapter {
                 return new SalaryFragment(codeTeacher,nameTeacher);
 
             case 1:
-                return new RatingTeacherFragment(codeTeacher);
+                return new RatingTeacherFragment(fragmentActivity, codeTeacher);
             default:
                 Toast.makeText(fragmentActivity, "No Page", Toast.LENGTH_SHORT).show();
         }
