@@ -2,18 +2,10 @@ package com.arafa.mohamed.studentteachersidraapp.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatTextView;
-import androidx.core.app.ActivityCompat;
-
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Paint;
-import android.graphics.fonts.FontFamily;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -41,7 +33,7 @@ public class TeacherDetailsActivity extends AppCompatActivity {
     RelativeLayout relativeContent;
     DatabaseReference databaseReference;
     FirebaseAuth firebaseAuth;
-    TeacherModel teacherModel, retrieveCodeTeacher, retrieveDataTeacher;
+    TeacherModel teacherModel, retrieveCodeTeacher;
     AdminModel adminModel;
     ArrayList<String> listCodeTeacher;
     Bundle extra ;
