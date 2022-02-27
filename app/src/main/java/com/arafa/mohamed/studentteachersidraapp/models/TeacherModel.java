@@ -2,7 +2,7 @@ package com.arafa.mohamed.studentteachersidraapp.models;
 
 public class TeacherModel {
 
-    private String codeTeacher, nameTeacher, phoneNumber, dateEnrollment ;
+    private String codeTeacher, nameTeacher, phoneNumber, dateEnrollment, emailAdmin ;
 
     public TeacherModel() {
     }
@@ -12,6 +12,13 @@ public class TeacherModel {
         this.nameTeacher = nameTeacher;
         this.phoneNumber = phoneNumber;
         this.dateEnrollment = dateEnrollment;
+    }
+
+    public TeacherModel(String nameTeacher, String codeTeacher, String emailAdmin) {
+        this.codeTeacher = codeTeacher;
+        this.nameTeacher = nameTeacher;
+        this.emailAdmin = emailAdmin;
+
     }
 
     public String getCodeTeacher() {
@@ -44,5 +51,13 @@ public class TeacherModel {
 
     public void setDateEnrollment(String dateEnrollment) {
         this.dateEnrollment = dateEnrollment;
+    }
+
+    public String getEmailAdmin() {
+        return emailAdmin;
+    }
+
+    public void setEmailAdmin(String emailAdmin) {
+        this.emailAdmin = emailAdmin;
     }
 }
